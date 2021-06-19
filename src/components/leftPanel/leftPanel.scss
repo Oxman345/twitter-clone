@@ -4,8 +4,20 @@
   min-height: 100vh;
 }
 
+header svg {
+    height: 1.9em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-left: 4em;
+}
+
 nav {
     padding-left: 3.3em;
+}
+
+nav svg {
+    height: 1.3em;
+    margin-right: 0.9em;
 }
 
 nav > *,
@@ -35,4 +47,17 @@ button.more {
 button {
   background: unset;
   border: unset;
+}
+
+button.tweet {
+    display: block;
+    background: #1da1f2;
+    color: #fff;
+    width: 14em;
+    height: 3em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-left: 3.7em;
+    cursor: pointer;
 }
