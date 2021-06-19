@@ -16,8 +16,8 @@ const App = () => {
           <Route path="/lists">Lists</Route>
           <Route path="/profile">Profile</Route>
         </Switch>
+        <div>Right Panel</div>
       </div>
-      <div>Right Panel</div>
     </BrowserRouter>
     
   );
