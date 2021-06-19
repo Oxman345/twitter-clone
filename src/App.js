@@ -5,7 +5,7 @@ import './App.scss';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <LeftPanel />
         <Switch>
           <Route path="/" exact>Home</Route>
@@ -16,7 +16,7 @@ const App = () => {
           <Route path="/lists">Lists</Route>
           <Route path="/profile">Profile</Route>
         </Switch>
-        <div>Right Panel</div>
+        <div className="right-panel">Right Panel</div>
       </div>
     </BrowserRouter>
     
