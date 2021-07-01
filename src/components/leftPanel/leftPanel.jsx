@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { twitter, home, explore, notifications, messages, bookmarks, lists, profile, more } from './icons'
+import { twitter, home, explore, notifications, messages, bookmarks, lists, profile, more, options } from './icons'
 import './leftPanel.scss'
 
 const LeftPanel = () => {
@@ -8,28 +8,28 @@ const LeftPanel = () => {
             <div className="container">
                 <header>{twitter}</header>
                 <nav>
-                    <NavLink to="/">
+                    <NavLink to="/" exact activeClassName="selected">
                         <span>{home} Home</span>
                     </NavLink>
-                    <NavLink to="/explore">
+                    <NavLink to="/explore" activeClassName="selected">
                         <span>{explore} Explore</span>
                     </NavLink>
-                    <NavLink to="/notifications">
+                    <NavLink to="/notifications" activeClassName="selected">
                         <span>{notifications} Notifications</span>
                     </NavLink>
-                    <NavLink to="/messages">
+                    <NavLink to="/messages" activeClassName="selected">
                         <span>{messages} Messages</span>
                     </NavLink>
-                    <NavLink to="/bookmarks">
+                    <NavLink to="/bookmarks" activeClassName="selected">
                         <span>{bookmarks} Bookmarks</span>
                     </NavLink>
-                    <NavLink to="/lists">
+                    <NavLink to="/lists" activeClassName="selected">
                         <span>{lists} Lists</span>
                     </NavLink>
-                    <NavLink to="/profile">
+                    <NavLink to="/profile" activeClassName="selected">
                         <span>{profile} Profile</span>
                     </NavLink>
-                    <button className="more">
+                    <button className="more" activeClassName="selected">
                         <span>{more} More</span>
                     </button>
                 </nav>
@@ -44,8 +44,11 @@ const LeftPanel = () => {
                         />
                         </div>
                         <div>
-                            <div className="name">Amir Mussa</div>
+                            <div className="name">Amir</div>
                             <div className="username">@amirmussa02</div>
+                        </div>
+                        <div>
+                        <button className="options">{options}</button>
                         </div>
                     </button>
                 </footer> 
